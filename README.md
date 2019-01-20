@@ -7,7 +7,7 @@
 5. Add 1 to time_t (0x80000000)
 6. Convert time_t back to string with gmtime_r, strftime
 
-Good result (64-bit openbsd, linux, macos):
+Good result (openbsd, 64-bit linux, 64-bit macos):
 
 ```
 time = 0x7fffffff
