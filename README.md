@@ -1,11 +1,14 @@
 # 2038_test
 
-1. Convert 2038/01/19 03:14:07 UTC to struct tm (striptime)
-2. Convert struct tm to time_t (gmtime)
+1. Convert 2038/01/19 03:14:07 UTC to struct tm (strptime)
+2. Convert struct tm to time_t (timegm)
 3. Print result time_t (0x7fffffff)
-4. Convert time_t back to string with gmtime_r, strftime
-5. Add 1 to time_t (0x80000000)
-6. Convert time_t back to string with gmtime_r, strftime
+4. Convert time_t back to string (gmtime_r, strftime)
+5. Print result string (2038/01/19 03:14:07)
+6. Add 1 to time_t 
+7. Print result time_t (0x80000000)
+8. Convert time_t back to string (gmtime_r, strftime)
+9. Print result string (2038/01/19 03:14:08 is good, 1901/12/13 20:45:52 is bad)
 
 Good result (openbsd, 64-bit linux, 64-bit macos):
 
