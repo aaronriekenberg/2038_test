@@ -1,5 +1,7 @@
 # 2038_test
 
+2038 test apps in C for openbsd/linux/macos.
+
 1. Convert 2038/01/19 03:14:07 UTC to struct tm (strptime)
 2. Convert struct tm to time_t (timegm)
 3. Print result time_t (0x7fffffff)
