@@ -2,6 +2,7 @@
 
 2038 test apps in C for openbsd/linux/macos.
 
+1. Printf sizeof(time_t) (8 is good, 4 is bad)
 1. Convert 2038/01/19 03:14:07 UTC to struct tm (strptime)
 2. Convert struct tm to time_t (timegm)
 3. Print result time_t (0x7fffffff)
@@ -15,6 +16,7 @@
 Good result (openbsd, 64-bit linux, 64-bit macos):
 
 ```
+sizeof time_t = 8
 time = 0x7fffffff
 time = 2038/01/19 03:14:07
 time + 1 = 0x80000000
@@ -24,6 +26,7 @@ time + 1 = 2038/01/19 03:14:08
 Bad result (32-bit linux):
 
 ```
+sizeof time_t = 4
 time = 0x7fffffff
 time = 2038/01/19 03:14:07
 time + 1 = 0x80000000
