@@ -13,7 +13,7 @@
 8. Convert time_t back to string (gmtime_r, strftime)
 9. Print result string (2038/01/19 03:14:08 is good, 1901/12/13 20:45:52 is bad)
 
-Good result (openbsd, 64-bit linux, 64-bit macos):
+Good result (netbsd, openbsd, 64-bit linux, 64-bit macos):
 
 ```
 sizeof time_t = 8

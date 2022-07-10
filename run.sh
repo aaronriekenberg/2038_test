@@ -1,6 +1,9 @@
 #!/bin/sh -x
 
 case $(uname) in
+  NetBSD)
+    cd netbsd
+    ;;
   OpenBSD)
     cd openbsd
     ;;
