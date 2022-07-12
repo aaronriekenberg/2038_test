@@ -1,6 +1,6 @@
 # 2038_test
 
-2038 test apps in C for openbsd/linux/macos.
+2038 test apps in C for netbsd/openbsd/linux/macos.
 
 1. Printf sizeof(time_t) (8 is good, 4 is bad)
 1. Convert 2038/01/19 03:14:07 UTC to struct tm (strptime)
